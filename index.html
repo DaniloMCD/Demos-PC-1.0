@@ -9,29 +9,54 @@
 </head>
 <body class="bg-gray-100 p-10">
 
-<div class="bg-white flex border-slate-950">
+<div class="flex bg-white border">
 
     <div class=""> <img src="logo.png" width="100px"></div>
+    <div class="flex flex-wrap content-center">
+        <ul class="p-2">
+            <li class="border bg-blue-400 text-white rounded flex justify-center">Start</li>
+        </ul>
+        <ul class="p-2">
+            <li class="border bg-blue-400 text-white rounded flex justify-center">Contact</li>
+        </ul>
+        <ul class="p-2">
+            <li class="border bg-blue-400 text-white rounded flex justify-center">Build your pc</li>
+        </ul>
+    </div>
 
+</div> 
+
+<div class="border-slate-950 w-full flex">
+<div><button class="border h-10 bg-white flex flex-wrap content-center p-2">Categories</button></div>
+<div><button class="border h-10 bg-white flex flex-wrap content-center p-2">Marks</button></div>
 </div>
 
-<div>
+<div class="p-2 m-2 flex justify-between">
  
-    <p class="font-bold" for="objeto1">Select your GPU:</p>
-    <select class="mb-10 border rounded" id="GPU">
-        <option value="1">AMD R9 290</option>
-        <option value="2">RTX3050</option>
-    </select>
-
-    <p class="font-bold" for="objeto2">Select your CPU:</p>
-    <select class="mb-10 border rounded" id="CPU">
-        <option value="1">R5 5600G</option>
-        <option value="2">i5 12400F</option>
-    </select>
+    <div class="my-10">
+        <p class="font-bold" for="objeto1">Select your GPU:</p>
+        <select class="mb-10 border rounded" id="GPU">
+            <option value="1">AMD R9 290</option>
+            <option value="2">RTX3050</option>
+        </select>
     
+        <p class="font-bold" for="objeto2">Select your CPU:</p>
+        <select class="mb-10 border rounded" id="CPU">
+            <option value="1">R5 5600G</option>
+            <option value="2">i5 12400F</option>
+        </select>
+
+        <div class="my-5"><button id="compararBtn" class="drop-shadow-2xl bg-blue-500 text-white p-2 rounded">Compare</button></div>
+        </div>
+
+   <div><h1 class="italic font-bold p-20 text-5xl" >Build your dream´s PC</h1></div>
+
+
+
 </div>
 
-    <button id="compararBtn" class="bg-blue-500 text-white p-2 rounded">Compare</button>
+
+    
 
 <script src="main.js"></script>
 </body>
