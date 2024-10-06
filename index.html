@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b408879b64.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Demo´s PC</title>
 </head>
-<body class="p-10">
+<body class="bg-gray-100 p-10">
 
-<header>
-    <div>
-        <img src="logo.png" width="100px">
-    </div>
+<div class="bg-white flex border-slate-950">
 
-    <nav>
-        
-    </nav>
-</header>
+    <div class=""> <img src="logo.png" width="100px"></div>
+
+</div>
 
 <div>
  
-    <p for="objeto1">Select your GPU:</p>
-    <select class="mb-10" id="GPU">
+    <p class="font-bold" for="objeto1">Select your GPU:</p>
+    <select class="mb-10 border rounded" id="GPU">
         <option value="1">AMD R9 290</option>
         <option value="2">RTX3050</option>
     </select>
 
-    <p for="objeto2">Select your CPU:</p>
-    <select class="mb-10" id="CPU">
+    <p class="font-bold" for="objeto2">Select your CPU:</p>
+    <select class="mb-10 border rounded" id="CPU">
         <option value="1">R5 5600G</option>
         <option value="2">i5 12400F</option>
     </select>
+    
 </div>
 
     <button id="compararBtn" class="bg-blue-500 text-white p-2 rounded">Compare</button>
