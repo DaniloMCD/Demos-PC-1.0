@@ -20,7 +20,7 @@ const btnLeft = document.querySelector(".btn-left"),
         counter = 0;
         operation = 0;
         slider.style.transform = `translate(-${operation}%)`
-        slider.style.transition = "none"
+        slider.style.transition = ""
         return;
     } 
     counter++;
@@ -36,7 +36,7 @@ const btnLeft = document.querySelector(".btn-left"),
         counter = sliderSection.length-1;
         operation = widthImg * (sliderSection.length-1)
         slider.style.transform = `translate(-${operation}%)`
-        slider.style.transition = "none"
+        slider.style.transition = ""
     } else {
         operation = operation - widthImg;
         slider.style.transform = `translate(-${operation}%)`
