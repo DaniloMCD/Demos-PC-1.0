@@ -5,60 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="Start.css">
-    <link rel="stylesheet" href="menuDesplegable.css">
+    <link rel="stylesheet" href="Start2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Demo´s PC</title>
 </head>
-<body class="bg-zinc-800 p-10 ">
-    <header class="flex bg-zinc-700 border">
+<body class="p-10 ">
+
+    <header class="flex drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] bg-zinc-700 border">
 
         <div class=""> <img src="logo.png" width="100px"></div>
+
         <div class="flex flex-wrap content-center">
             <ul class="p-2">
                 <li class="border bg-blue-400 text-white rounded flex justify-center"><a href="">Home</a></li>
             </ul>
-            <ul class="p-2">
-                <li class="border bg-blue-400 text-white rounded flex justify-center"><a href="">Contact</a></li>
-            </ul>
-            <ul class="p-2">
-                <li class="border bg-blue-400 text-white rounded flex justify-center"><a href="index.html">Build your PC</a></li>
-            </ul>
-            <ul class="p-2">
-                <li class="border bg-blue-400 text-white rounded flex justify-center" id=""><a href="CPU.html">CPU</a></li>
-            </ul>
         </div>
-    
-    </header> 
-    
 
-    <div class="border-slate-950 w-full flex">
-    <div><button class=" text-white border h-10 bg-zinc-700 flex flex-wrap content-center p-2">Categories</button></div>
-    <div><button class=" text-white border h-10 bg-zinc-700 flex flex-wrap content-center p-2">Marks</button></div>
-    </div>
-
-    <!--Carrusel de imagenes xdxd-->
-    <div class="">
-        <div class="container-carrusel mx-14 my-20">
-            <div id="slider" class="carruseles">
-            <section class="slider-section">
-                <img src="Interfaz 1.PNG">
-            </section>
-            <section class="slider-section">
-                <img src="Interfaz 2.PNG">
-            </section>
-            <section class="slider-section">
-                <img src="Interfaz 3.PNG">
-            </section>
+        <div class="flex flex-wrap content-center" >
+            <input type="text" id="search" placeholder="Buscar producto">
             </div>
-            <div class="btn-left"><i class='bx bx-chevron-left' ></i></div>
-            <div class="btn-right"><i class='bx bx-chevron-right' ></i></div>
-        </div>
 
-        <div>
+    </header> 
 
-        </div>
+    
+    <!--<div class="estructura">
+        <div id="productsContainer"></div>
+    </div>--> 
+
+    <div class="flex justify-between">
+
+            <div class="container-carrusel mx-14 my-20 ">
+                <div id="slider" class="carruseles">
+                <section class="slider-section">
+                    <img src="Interfaz 1.PNG">
+                </section>
+                <section class="slider-section">
+                    <img src="Interfaz 2.PNG">
+                </section>
+                <section class="slider-section">
+                    <img src="Interfaz 3.PNG">
+                </section>
+                </div>
+                <div class="btn-left"><i class='bx bx-chevron-left' ></i></div>
+                <div class="btn-right"><i class='bx bx-chevron-right' ></i></div>
+            </div>
+
+            <div><button></button></div>
+
+            <div class="my-24 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-5/12">
+                <ul class="p-2 outline outline-offset-2 outline-2 outline-white rounded ">
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="index.html">Build your pc</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="">Recomended combos</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Intel.html">Intel products</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="AMD.html">AMD products</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Nvidia.html">Nvidia products</a></button>
+                </ul>
+            </div>
+
     </div>
+    
 
 <script src="Start.js"></script>
+<script src="Start2.js"></script>
 </body>
 </html>
