@@ -4,46 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Start.css">
-    <link rel="stylesheet" href="Start2.css">
+    <link rel="stylesheet" href="Home/Start.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Demo´s PC</title>
 </head>
 <body class="p-10 ">
 
-    <header class="flex drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] bg-zinc-700 border">
+    <header class="flex justify-between drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] bg-zinc-700 border ">
 
-        <div class=""> <img src="logo.png" width="100px"></div>
+        <div class=""> <img src="Home/logo.png" width="100px"></div>
 
-        <div class="flex flex-wrap content-center">
-            <ul class="p-2">
-                <li class="border bg-blue-400 text-white rounded flex justify-center"><a href="">Home</a></li>
-            </ul>
+        <div>
+            <h1 class="not-italic font-bold my-5 text-5xl text-white">If you want it, build it...</h1>
         </div>
 
-        <div class="flex flex-wrap content-center" >
-            <input type="text" id="search" placeholder="Buscar producto">
-            </div>
+        <div class="flex flex-wrap content-center ">
+           <img src="imgGifs/gifp1.gif" alt="" width="100px">
+        </div>
 
     </header> 
 
     
-    <!--<div class="estructura">
-        <div id="productsContainer"></div>
-    </div>--> 
 
     <div class="flex justify-between">
 
-            <div class="container-carrusel mx-14 my-20 ">
+            <div class="container-carrusel mx-14 my-20">
                 <div id="slider" class="carruseles">
                 <section class="slider-section">
-                    <img src="Interfaz 1.PNG">
+                    <img src="Home/Interfaz 1.PNG">
                 </section>
                 <section class="slider-section">
-                    <img src="Interfaz 2.PNG">
+                    <img src="Home/Interfaz 2.PNG">
                 </section>
                 <section class="slider-section">
-                    <img src="Interfaz 3.PNG">
+                    <img src="Home/Interfaz 3.PNG">
                 </section>
                 </div>
                 <div class="btn-left"><i class='bx bx-chevron-left' ></i></div>
@@ -53,19 +47,18 @@
             <div><button></button></div>
 
             <div class="my-24 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] w-5/12">
-                <ul class="p-2 outline outline-offset-2 outline-2 outline-white rounded ">
-                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="index.html">Build your pc</a></button>
-                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="">Recomended combos</a></button>
-                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Intel.html">Intel products</a></button>
-                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="AMD.html">AMD products</a></button>
-                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Nvidia.html">Nvidia products</a></button>
+                <ul class="p-2 outline outline-offset-2 outline-4 outline-white rounded ">
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="index/index.html">Build your pc</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Recomended combos/rCombos.html">Recomended combos</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="intel/intel.html">Intel products</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="AMD/AMD.html">AMD products</a></button>
+                    <button class="w-full p-3 bg-zinc-700 text-white m-1 flex justify-center"><a href="Nvidia/Nvidia.html">Nvidia products</a></button>
                 </ul>
             </div>
 
     </div>
     
 
-<script src="Start.js"></script>
-<script src="Start2.js"></script>
+<script src="Home/Start.js"></script>
 </body>
 </html>
