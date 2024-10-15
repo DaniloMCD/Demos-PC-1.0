@@ -1,14 +1,24 @@
-function compararObjetos(tipo1, tipo2) {
-    if (tipo1 === tipo2) {
-        alert('Los objetos son compatibles.');
+function verificarCompatibilidad() {
+    
+    let tipo1 = document.getElementById("select1").value;
+    let tipo2 = document.getElementById("select2").value;
+    let tipo3 = document.getElementById("select3").value;
+    let tipo4 = document.getElementById("select4").value;
+
+    tipo1 = parseInt(tipo1);
+    tipo2 = parseInt(tipo2);
+    tipo3 = parseInt(tipo3);
+    tipo4 = parseInt(tipo4);
+
+    const tipos = [tipo1, tipo2, tipo3, tipo4];
+
+    const todosTipo1 = tipos.every(tipo => tipo === 1);
+    const todosTipo2 = tipos.every(tipo => tipo === 2);
+    const todosTipo3 = tipos.every(tipo => tipo === 3);
+
+    if (todosTipo1 || todosTipo2 || todosTipo3) {
+        alert("Son compatibles");
     } else {
-        alert('Los objetos no son compatibles.');
+        alert("No son compatibles");
     }
 }
-
-document.getElementById('compararBtn').addEventListener('click', function() {
-    const tipo1 = document.getElementById('GPU').value;
-    const tipo2 = document.getElementById('CPU').value;
-
-    compararObjetos(tipo1, tipo2);
-});

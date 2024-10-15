@@ -20,21 +20,46 @@
 
 <div class="p-2 m-2 flex justify-between">
  
-    <div class="my-10">
-        <p class="font-bold text-white" for="objeto1">Select your GPU:</p>
-        <select class="mb-10 border rounded" id="GPU">
-            <option value="1">AMD R9 290</option>
-            <option value="2">RTX3050</option>
-        </select>
-    
-        <p class="text-white font-bold" for="objeto2">Select your CPU:</p>
-        <select class="mb-10 border rounded" id="CPU">
+    <form id="compatibilidadForm">
+
+        <div class="p-3">
+        <p class="text-white" for="select1">Select your CPU:</p>
+        <select  id="select1" name="select1">
             <option value="1">R5 5600G</option>
             <option value="2">i5 12400F</option>
+            <option value="3">Athlon II X2 250</option>
         </select>
-
-        <div class="my-5"><button id="compararBtn" class="drop-shadow-2xl bg-blue-500 text-white p-2 rounded">Compare</button></div>
         </div>
+
+        <div class="p-3">
+        <p class="text-white" for="select2">Select your GPU:</p>
+        <select id="select2" name="select2">
+            <option value="1">Radeon R9 290</option>
+            <option value="2">RTX3050</option>
+            <option value="3">ASUS GTX 1050Ti</option>
+        </select>
+        </div>
+
+        <div class="p-3">
+        <p class="text-white" for="select3">Select your MTBD:</p>
+        <select id="select3" name="select3">
+            <option value="1">msi B550M PRO</option>
+            <option value="2">GIGABYTE B760M</option>
+            <option value="3">ASUS M4N68T-M-V2</option>
+        </select>
+        </div>
+
+        <div class="p-3">
+            <p class="text-white" for="select4">Select your RAM:</p>
+            <select id="select4" name="select4">
+                <option value="1">XPG 8G</option>
+                <option value="2">Kingstone 8G</option>
+                <option value="3">HyperX 8G RGB</option>
+            </select>
+            </div>
+
+        <button type="button" class="p-1 my-3 mx-3 border bg-blue-400 text-white rounded flex justify-center" onclick="verificarCompatibilidad()">Verify</button>
+    </form>
 
    <div><h1 class="italic font-bold p-20 text-5xl text-white" >Build your dream´s PC</h1></div>
 
